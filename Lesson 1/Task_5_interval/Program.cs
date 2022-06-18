@@ -1,10 +1,10 @@
 ﻿//Напишите программу, которая на вход принимает одно число (N), а на выходе показывает все целые числа в промежутке от -N до N.
 
 Console.Write("Введите число: ");
-string N = Console.ReadLine();
-int N1 = int.Parse(N);
-int N2 = N1 * (-1);
- for (int i = N2; i <= N1; i++ ) 
+int N = Convert.ToInt32(Console.ReadLine());
+int N2 = N * (-1);
+Console.WriteLine($"Целые числа в промежутке [{N2};{N}]:");
+ for (int i = N2; i <= N; i++ ) 
  {
      Console.Write(i);
      Console.Write(" ");
