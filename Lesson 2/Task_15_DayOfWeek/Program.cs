@@ -9,4 +9,4 @@ else if (day == 4){Console.WriteLine("Четверг - будний день");}
 else if (day == 5){Console.WriteLine("Пятница - будний день");}
 else if (day == 6){Console.WriteLine("Суббота - выходной день!");}
 else if (day == 7){Console.WriteLine("Воскресенье - выходной день!");}
-else {Console.WriteLine("Ошибка ввода (введите число от 1 до 7)");}
+else {Console.WriteLine("Ошибка ввода! (введите число от 1 до 7)");}
