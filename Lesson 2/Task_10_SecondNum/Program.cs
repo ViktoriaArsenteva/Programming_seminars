@@ -2,12 +2,13 @@
 
 Console.Write("Введите любое число: ");
 int num = Convert.ToInt32(Console.ReadLine());
+int num1 = Math.Abs(num);
 List<int> numbers = new List<int>();
-Console.Write($"Вторая цифра числа {num}: ");
-while (num != 0)
+while (num1 != 0)
 {
-    numbers.Add(num % 10);
-    num /= 10;
+    numbers.Add(num1 % 10);
+    num1 /= 10;
 }
 numbers.Reverse();
+Console.Write($"Вторая цифра числа {num}: ");
 Console.WriteLine(numbers[1]);
