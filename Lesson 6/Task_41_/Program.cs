@@ -13,7 +13,7 @@ int Counter (int[] Array)
     int i = 0;
     for (int index = 0; index < Array.Length; index++)
     {
-        if (Array[i]>0) i++;
+        if (Array[index]>0) i++;
     }
     return i;
 }
