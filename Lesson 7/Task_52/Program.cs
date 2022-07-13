@@ -3,14 +3,14 @@
 int[,] CreateRndTwoDimensionalArray()
 {
     var rnd = new Random();
-    int lines = rnd.Next(1, 20);
-    int columns = rnd.Next(1, 20);
+    int lines = rnd.Next(1, 10);
+    int columns = rnd.Next(1, 10);
     int[,] TwoDimensionalArray = new int[lines, columns];
     for (int i = 0; i < TwoDimensionalArray.GetLength(0); i++)
     {
         for (int j = 0; j < TwoDimensionalArray.GetLength(1); j++)
         {
-            TwoDimensionalArray[i, j] = rnd.Next(1, 100);
+            TwoDimensionalArray[i, j] = rnd.Next(1, 10);
 
         }
     }
@@ -39,7 +39,7 @@ double[] AverageOfColumns(int[,] Matrix)
         {
             sum += Matrix[i, j];
         }
-        Array[j] = Math.Round(((double)sum / Matrix.GetLength(1)),3);
+        Array[j] = Math.Round(((double)sum / Matrix.GetLength(0)), 1);
     }
     return Array;
 }
@@ -48,7 +48,7 @@ void PrintArray(double[] Array)
     for (int i = 0; i < Array.Length; i++)
     {
         if (i < Array.Length - 1) Console.Write(Array[i] + "; ");
-        else Console.Write(Array[i] );
+        else Console.Write(Array[i]);
     }
 }
 int[,] RndTwoDimensionalArray = CreateRndTwoDimensionalArray();
