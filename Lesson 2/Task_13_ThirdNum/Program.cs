@@ -4,7 +4,7 @@ Console.Write("Введите любое число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 int i = Math.Abs(num);
 List<int> Numbers = new List<int>();
-Console.WriteLine(numbers);
+Console.WriteLine(Numbers);
 while (i != 0)
 {
     Numbers.Add(i % 10);

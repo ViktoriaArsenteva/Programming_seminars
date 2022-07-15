@@ -9,7 +9,7 @@ while (i < numbers.Length)
     i++;
 }
 int max = numbers[0];
-while (k < Numbers.Length)
+while (k < numbers.Length)
 {
     if (numbers[k] > max)
     {
