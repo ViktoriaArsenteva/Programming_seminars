@@ -37,7 +37,6 @@ int[,] ArrayFilling(int lines, int columns)
             number++;
         }
         checkJ--;
-        Console.WriteLine(number);
     }
     Matrix[i,j] = number;
     return Matrix;
@@ -62,4 +61,3 @@ Console.Write("Введите количество столбцов: ");
 int columns = Convert.ToInt32(Console.ReadLine());
 int[,] Array = ArrayFilling(lines, columns);
 PrintTwoDimensionalArray(Array);
-
