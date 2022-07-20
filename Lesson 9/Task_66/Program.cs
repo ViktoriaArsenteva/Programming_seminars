@@ -1,13 +1,9 @@
 ﻿// Задача 66: Задайте значения M и N. Напишите программу, которая найдёт сумму натуральных элементов в промежутке от M до N.
 
-int SumOfNumbers(int firstNum, int secondNum)
+int SumOfNumbers(int n, int m)
 {
-    int sum = 0;
-    for (int i = firstNum; i <= secondNum; i++)
-    {
-        sum += i;
-    }
-    return sum;
+    if (n == m) return m;
+    return n + SumOfNumbers(n + 1, m);
 }
 Console.WriteLine("Введите два числа, чтобы найти сумму натуральных элементов между ними:");
 Console.Write("Введите первое число: ");
